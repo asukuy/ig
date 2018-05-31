@@ -62,7 +62,7 @@ $myssesion[9] = $blibli12;
 $myssesion[10] = $blibli13;
 $myssesion[11] = $blibli14;
 
-$count = 3;
+$count = 7;
 
 
 while(1<2){
