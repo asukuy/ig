@@ -64,19 +64,20 @@ $myssesion[11] = $blibli14;
 
 $count = 7;
 
+$id_target = [25980770,367005646,614380621,1534176228,2016740443,8115577,4310360,188236161,522969993];
 
 while(1<2){
 
 require_once('fungsi.php');
 $_SESSION['data'] = $myssesion[$count%12];
-
+$target = $id_target[$count%8];
 
 echo $_time;
 if($_time>=12){
 	
         $jumlah= "50";
         $_POST['tipe'] = "followers";
-        $target = "522969993";
+        
 	$data_session = $_SESSION['data'];
 	$getinfo = proccess(1, $data_session['useragent'], 'users/'.$target.'/info/');
 	$getinfo = json_decode($getinfo[1]);
